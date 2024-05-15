@@ -19,7 +19,7 @@
 /*BARRA DE NAVEGACION*/
 html {
     font-size: 60%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 body {
@@ -203,7 +203,7 @@ span {
     color: black;
 }
 
-.proyectos{
+.projects{
     background: #131313;   
 }
 
@@ -214,3 +214,158 @@ span {
     justify-content: center;
     flex-direction: column;
 }
+
+.projects .heading{
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.projects-box img{
+    width: 30rem;
+    height: auto;
+    border: 3px solid #f80000;
+    box-shadow: 0 0 25px #f80000;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+}
+
+.projects-item{
+    min-height: 400px;
+    max-width: 350px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.projects-item:hover{
+    border: 3px solid #f80000;
+    transform: translateY(-10px)scale(1.03);
+    box-shadow: 0 0 50px #f80000;
+}
+
+.projects-item h2{
+    font-size: 2.8rem;
+}
+
+.herramientas-box {
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.herramientas .heading{
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.iconos {
+    font-size: 5rem;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    color: #f80000;
+}
+
+.contacto{
+    background-color: #131313;
+}
+
+.contacto .heading{
+    font-size: 8rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contacto h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.contacto form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.contacto form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contacto form .input-box input, .contacto form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: white;
+    background: #080808;
+    border-radius: 2rem;
+    border: 2px solid #f80000;
+    margin: 1.5rem 0;
+    resize: none;
+}
+
+.contacto form .btn{
+    margin-top: 2rem;
+}
+
+.footer{
+    
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #080808;
+}
+
+.footer .socail{
+    
+    text-align: center;
+    padding-bottom: 25px;
+    color: #f80000;
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: #f80000;
+    border: 2px solid #f80000;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: #f80000;
+    color: black;
+    box-shadow: 0 0 25px #f80000;
+}
+
+
