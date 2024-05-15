@@ -345,6 +345,7 @@ span {
     text-align: center;
     padding-bottom: 25px;
     color: #f80000;
+    justify-content: center;
 }
 
 .footer .social a{
